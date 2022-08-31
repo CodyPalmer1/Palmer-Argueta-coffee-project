@@ -1,3 +1,36 @@
+.bodyElement {
+    margin: 1em;
+    background-color: #DFB78C;
+}
+.title {
+    color: white;
+    font-family: 'Henny Penny', cursive;
+}
+.divider {
+    color: #AB6832;
+    border-top: 5px solid;
+}
+h5 {
+    font-family: 'IM Fell English', serif;
+    color: white;
+}
+h2 {
+    font-family: 'Henny Penny', cursive;
+    color: white;
+}
+#submit {
+    font-family: 'Henny Penny', cursive;
+    background-color: #AB6832;
+}
+#submit2 {
+    font-family: 'Henny Penny', cursive;
+    background-color: #AB6832;
+}
+.two {
+    background-color: #49281A;
+    opacity: 65%;
+    border-radius: 25px;
+}
 table {
     border-collapse: collapse;
     margin: 15px 0;
