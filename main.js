@@ -60,6 +60,8 @@
 
 let filterProd = [];
 let filterProd2 = [];
+let filterProd3 = [];
+let filterProd4 = [];
 
 var coffees = [
     {id: 1, name: 'light city', roast: 'light'},
@@ -134,6 +136,7 @@ document.getElementById("myInput").addEventListener("keyup", function() {
 });
 
 //SEARCHBAR 2
+
 document.getElementById("myInput2").addEventListener("keyup", function() {
     let text2 = document.getElementById("myInput2").value;
 
@@ -157,3 +160,56 @@ document.getElementById("myInput2").addEventListener("keyup", function() {
         }
     }
 });
+
+//DROPDOWN 1
+
+document.getElementById("roast-selection").addEventListener("click", function() {
+    let click1 = document.getElementById("roast-selection").value;
+
+    filterProd3 = coffees.filter(function(a) {
+        if(a.name.includes(click1)) {
+            return a.name;
+        } else if(a.roast.includes(click1)) {
+            return a.roast;
+        }
+    });
+
+    if(this.value === "") {
+        showProducts(coffees);
+    } else {
+        if(filterProd3 == "") {
+            document.getElementById("para").style.display = 'block';
+            document.getElementById("card").innerHTML = "";
+        } else {
+            showProducts(filterProd3);
+            document.getElementById("para").style.display = 'none'
+        }
+    }
+});
+
+//DROPDOWN 2
+
+document.getElementById("roast-add").addEventListener("click", function() {
+    let click2 = document.getElementById("roast-add").value;
+
+    filterProd4 = coffees.filter(function(a) {
+        if(a.name.includes(click2)) {
+            return a.name;
+        } else if(a.roast.includes(click2)) {
+            return a.roast;
+        }
+    });
+
+    if(this.value === "") {
+        showProducts(coffees);
+    } else {
+        if(filterProd4 == "") {
+            document.getElementById("para").style.display = 'block';
+            document.getElementById("card").innerHTML = "";
+        } else {
+            showProducts(filterProd4);
+            document.getElementById("para").style.display = 'none'
+        }
+    }
+});
+
