@@ -94,10 +94,10 @@ function showProducts(input) {
         <div class="col-lg-6 d-flex justify-content-center">
         <div class="card" style="background-color: #DFB78C; font-family: 'Henny Penny', cursive; color: #49281A; border-color: #DFB78C;">
         
-                <h4 class="text-capitalize">${input[i].name}</h4>
+                <h4 class="text-center text-capitalize">${input[i].name}</h4>
                 
               
-                <p class="align-self-end fs-5" style="font-family: 'IM Fell English', serif; color: #AB6832">${input[i].roast}</p>
+                <p class="text-center fs-5" style="font-family: 'IM Fell English', serif; color: #AB6832">${input[i].roast}</p>
            
         </div>
         </div> 
@@ -138,7 +138,7 @@ document.getElementById("myInput").addEventListener("keyup", function() {
 //SEARCHBAR 2
 
 document.getElementById("myInput2").addEventListener("keyup", function() {
-    let text2 = document.getElementById("myInput2").value;
+    let text2 = document.getElementById("myInput2").value.toLowerCase();
 
     filterProd2 = coffees.filter(function(a) {
         if(a.name.includes(text2)) {
