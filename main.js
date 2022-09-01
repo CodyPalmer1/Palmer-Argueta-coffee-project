@@ -110,8 +110,7 @@ function showProducts(input) {
 //SEARCHBAR 1
 
 document.getElementById("myInput").addEventListener("keyup", function() {
-    let text = document.getElementById("myInput").value;
-
+    let text = document.getElementById("myInput").value.toLowerCase();
 
 
     filterProd = coffees.filter(function(a) {
@@ -138,7 +137,7 @@ document.getElementById("myInput").addEventListener("keyup", function() {
 //SEARCHBAR 2
 
 document.getElementById("myInput2").addEventListener("keyup", function() {
-    let text2 = document.getElementById("myInput2").value;
+    let text2 = document.getElementById("myInput2").value.toLowerCase();
 
     filterProd2 = coffees.filter(function(a) {
         if(a.name.includes(text2)) {
