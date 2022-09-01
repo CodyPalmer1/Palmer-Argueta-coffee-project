@@ -59,6 +59,8 @@
 
 
 let filterProd = [];
+let filterProd2 = [];
+
 var coffees = [
     {id: 1, name: 'light city', roast: 'light'},
     {id: 2, name: 'half city', roast: 'light'},
@@ -103,6 +105,8 @@ function showProducts(input) {
 }
 
 
+//SEARCHBAR 1
+
 document.getElementById("myInput").addEventListener("keyup", function() {
     let text = document.getElementById("myInput").value;
 
@@ -124,6 +128,31 @@ document.getElementById("myInput").addEventListener("keyup", function() {
             document.getElementById("card").innerHTML = "";
         } else {
             showProducts(filterProd);
+            document.getElementById("para").style.display = 'none'
+        }
+    }
+});
+
+//SEARCHBAR 2
+document.getElementById("myInput2").addEventListener("keyup", function() {
+    let text2 = document.getElementById("myInput2").value;
+
+    filterProd2 = coffees.filter(function(a) {
+        if(a.name.includes(text2)) {
+            return a.name;
+        } else if(a.roast.includes(text2)) {
+            return a.roast;
+        }
+    });
+
+    if(this.value === "") {
+        showProducts(coffees);
+    } else {
+        if(filterProd2 == "") {
+            document.getElementById("para").style.display = 'block';
+            document.getElementById("card").innerHTML = "";
+        } else {
+            showProducts(filterProd2);
             document.getElementById("para").style.display = 'none'
         }
     }
