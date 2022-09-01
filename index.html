@@ -15,26 +15,26 @@
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IM+Fell+English&display=swap"
+          rel="stylesheet">
 
 
 </head>
 <body class="bodyElement">
+
+<!--HEADER-->
 <h1 class="title text-center">Coffee!</h1>
+
 <hr class="divider">
+
+<!--START OF GRID-->
+
 <div class="container">
     <div class="row">
+
+        <!--JAVASCRIPT GOES HERE-->
         <div class="one col-lg-6 mt-2">
-<!--            <table>-->
-<!--                <thead>-->
-<!--                <tr>-->
-<!--                    <th class="d-none">ID</th>-->
-<!--                    <td>NAME</td>-->
-<!--                    <td>ROAST</td>-->
-<!--                </tr>-->
-<!--                </thead>-->
-<!--                <tbody id="coffees"></tbody>-->
-<!--            </table>-->
+
 
             <div class="coffee-cards">
                 <div class="card">
@@ -45,12 +45,19 @@
                 </div>
             </div>
 
+
+            <!--END OF JAVASCRIPT-->
         </div>
 
+
+        <!--DROPDOWN AND SEARCHBAR-->
         <div class="two float-end col-lg-6 mt-2">
+
+            <!--ROAST SELECTION ONE-->
             <div>
                 <form>
-                    <!-- ROAST SELECTION -->
+
+                    <!--DROPDOWN 1-->
                     <label for="roast-selection"></label>
                     <h5>Roast</h5>
                     <select class="border border-dark rounded w-100 mb-4 p-2" id="roast-selection">
@@ -59,28 +66,22 @@
                         <option>medium</option>
                         <option>dark</option>
                     </select>
-                    <!-- SEARCH BAR -->
+
+
+                    <!-- SEARCHBAR 1-->
                     <h5>Coffee Name</h5>
-                    <form class="d-flex" role="search">
-                        <input class="border border-dark form-control mb-2" type="search" id="search" placeholder="Search"
-                               aria-label="Search">
-                    </form>
 
 
-<!--                    <div class="search-bar">-->
-<!--                        <label for="search">Coffee Name</label>-->
-<!--                        <input type="search" id="search">-->
-<!--                    </div>-->
-
-                    <input class="border rounded text-light w-100" id="submit" type="submit">
-                </form>
+                    <!--END OF ROAST SELECTION ONE-->
             </div>
 
 
+            <!--ROAST SELECTION TWO-->
             <div>
                 <h2 class="text-center mt-5">Add a Coffee</h2>
                 <form>
-                    <!-- ROAST SELECTION 2 -->
+
+                    <!--DROPDOWN 2-->
                     <label for="roast-selection"></label>
                     <h5>Roast</h5>
                     <select class="border border-dark rounded w-100 mb-4 p-2" id="roast-add">
@@ -89,19 +90,21 @@
                         <option>medium</option>
                         <option>dark</option>
                     </select>
-                    <!-- SEARCH BAR 2 -->
-                    <h5>Name</h5>
-                    <form class="d-flex" role="search">
-                        <input class="border border-dark form-control mb-2" type="text" placeholder="Search"
-                               aria-label="Search">
-                    </form>
 
-                    <input class="border rounded text-light w-100 mb-4" id="submit2" type="submit">
-                </form>
+
+                    <!-- SEARCHBAR 2 -->
+                    <h5>Name</h5>
+
+
+                    <!--END OF ROAST SELECTION TWO-->
             </div>
+
+            <!--END OF DROPDOWN AND SEARCHBAR-->
         </div>
-        <script src="main.js"></script>
     </div>
 </div>
+
+
+<script src="main.js"></script>
 </body>
 </html>
