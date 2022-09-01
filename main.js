@@ -110,7 +110,7 @@ function showProducts(input) {
 //SEARCHBAR 1
 
 document.getElementById("myInput").addEventListener("keyup", function() {
-    let text = document.getElementById("myInput").value;
+    let text = document.getElementById("myInput").value.toLowerCase();
 
 
 
