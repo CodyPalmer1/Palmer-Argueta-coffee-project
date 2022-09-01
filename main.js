@@ -91,13 +91,13 @@ function showProducts(input) {
     for(var i = 0; i < input.length; i++) {
         document.getElementById("card").innerHTML +=
             `
-        <div class="col-lg-2 mt-3">
-        <div class="card d-flex justify-content-center p-2">
+        <div class="col-lg-6 d-flex justify-content-center">
+        <div class="card" style="background-color: #DFB78C; font-family: 'Henny Penny', cursive; color: #49281A; border-color: #DFB78C;">
         
                 <h4 class="text-capitalize">${input[i].name}</h4>
                 
               
-                <p class="mt-2">${input[i].roast}</p>
+                <p class="align-self-end fs-5" style="font-family: 'IM Fell English', serif; color: #AB6832">${input[i].roast}</p>
            
         </div>
         </div> 
